@@ -35,8 +35,12 @@ public class Main {
 
         student1.addCourse(new Course("Java", "Dominic",241));
         student2.addCourse(new Course("Web", "Martin",231));
-        student3.addCourse(new Course("UX/UI", "Marion",222));
+        student3.addCourse(new Course("UX/UI", "Kathrin",222));
         student1.addCourse(new Course("Web", "Martin",231));
+
+        Student.retrieveAllCourses(651546);
+        Student.retrieveAllCourses(12345);
+
     }
 
 }

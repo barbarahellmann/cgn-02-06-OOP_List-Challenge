@@ -23,6 +23,19 @@ public class Student {
         courses.add(newCourse);
     }
 
+    public static  List<Course> retrieveAllCourses(int studentID){
+        for (Student eachStudent : School.students){
+            if (eachStudent.studentID == studentID) {
+                System.out.println("The Student " + eachStudent.firstName + " " + eachStudent.lastName
+                        + " attends this courses: " + eachStudent.courses.toString() + ".");
+                return eachStudent.courses;
+            }
+        }
+        System.out.println("No student found with this ID. So we cannot give you the courses");
+        return null;
+    }
+
+
 
     @Override
     public String toString() {
@@ -31,8 +44,6 @@ public class Student {
                 ", lastName='" + lastName + '\'' +
                 ", studentID=" + studentID +
                 '}';
-
-
 
     }
 }
