@@ -11,11 +11,18 @@ public class Student {
     public int studentID;
 
 
+    List<Course> courses = new ArrayList<>();
+
     public Student(String firstName, String lastName, int studentID) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.studentID = studentID;
     }
+
+    public void addCourse(Course newCourse){
+        courses.add(newCourse);
+    }
+
 
     @Override
     public String toString() {
