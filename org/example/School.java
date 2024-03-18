@@ -53,6 +53,6 @@ public class School {
                 students.remove(eachStudent);
             }
         }
-        System.out.println("No student found with this ID.");
+        System.out.println("No student found with this ID to remove.");
     }
 }
