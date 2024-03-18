@@ -25,6 +25,8 @@ public class Main {
         School.addStudent(student3);
 
         School.printStudents();
+        School.findStudent(651546);
+        School.findStudent(123456);
     }
 
 }

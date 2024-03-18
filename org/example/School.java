@@ -33,6 +33,7 @@ public class School {
     public static Student findStudent(int studentID){
         for (Student eachStudent : students){
             if (eachStudent.studentID == studentID) {
+                System.out.println("Student found: " + eachStudent.firstName + ", " + eachStudent.lastName + ".");
                 return eachStudent;
             }
         }
@@ -48,7 +49,7 @@ public class School {
     public static void removeStudent(int studentID){
         for (Student eachStudent : students){
             if (eachStudent.studentID == studentID) {
-                System.out.println("Removing student: " + eachStudent.firstName + ", " + eachStudent.lastName);
+                System.out.println("Removing student: " + eachStudent.firstName + ", " + eachStudent.lastName + ".");
                 students.remove(eachStudent);
             }
         }
